@@ -4,7 +4,7 @@
 ## Unguided 
 
 ### Siswa kelas IPA di salah satu sekolah menengah atas di Indonesia sedang mengadakanpraktikum kimia. Di setiap percobaan akan menggunakan 4 tabung reaksi, yang manasusunan warna cairan di setiap tabung akan menentukan hasil percobaan. Siswa dimintauntuk mencatat hasil percobaan tersebut. Percobaan dikatakan berhasil apabila susunanwarna zat cair pada gelas 1 hingga gelas 4 secara berturutan adalah ‘merah’, ‘kuning’,‘hijau’, dan ‘ungu’ selama 5 kali percobaan berulang.Buatlah sebuah program yang menerima input berupa warna dari ke 4 gelas reaksisebanyak 5 kali percobaan. Kemudian program akan menampilkan true apabila urutanwarna sesuai dengan informasi yang diberikan pada paragraf sebelumnya, dan falseuntuk urutan warna lainnya.Perhatikan contoh sesi interaksi program seperti di bawah ini (teks bergaris bawahadalah input/read):
-#### soal1.go
+#### 
 
 ```go
 package main

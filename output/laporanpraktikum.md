@@ -4,35 +4,36 @@
 ## Unguided 
 
 ### 1.Telusuri program berikut dengan cara mengkompilasi dan mengeksekusi program. Silakanmasukan data yang sesuai sebanyak yang diminta program. Perhatikan keluaran yangdiperoleh. Coba terangkan apa sebenarnya yang dilakukan program tersebut?
-#### soal1.go
+#### 
 
 ```go
 package main
+
 import "fmt"
 
 func main() {
-    var (
-        satu, dua, tiga string
-        temp string
-    )
+	var (
+		satu, dua, tiga string
+		temp            string
+	)
 
-    fmt.Print("Masukan input string: ")
-    fmt.Scanln(&satu)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&satu)
 
-    fmt.Print("Masukan input string: ")
-    fmt.Scanln(&dua)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&dua)
 
-    fmt.Print("Masukan input string: ")
-    fmt.Scanln(&tiga)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&tiga)
 
-    fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
+	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
 
-    temp = satu
-    satu = dua
-    dua = tiga
-    tiga = temp
+	temp = satu
+	satu = dua
+	dua = tiga
+	tiga = temp
 
-    fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
+	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
 ```
 ### Output Unguided :
