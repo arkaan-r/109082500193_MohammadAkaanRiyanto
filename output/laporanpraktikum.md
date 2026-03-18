@@ -3,31 +3,37 @@
 
 ## Unguided 
 
-### Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematikadiskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, isenguntuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalianmembantu Jonas? (tidak tentunya ya :p)Masukan terdiri dari empat buah bilangan asli a, b, c, dan d yang dipisahkan oleh spasi,dengan syarat a ≥ c dan b ≥ d.Keluaran terdiri dari dua baris. Baris pertama adalah hasil permutasi dan kombinasi aterhadap c, sedangkan baris kedua adalah hasil permutasi dan kombinasi b terhadap d.Catatan: permutasi (P) dan kombinasi (C) dari n terhadap r (n ≥ r) dapat dihitung dengan menggunakan persamaan berikut!
+### 1.Telusuri program berikut dengan cara mengkompilasi dan mengeksekusi program. Silakanmasukan data yang sesuai sebanyak yang diminta program. Perhatikan keluaran yangdiperoleh. Coba terangkan apa sebenarnya yang dilakukan program tersebut?
+#### 
 
 ```go
 package main
 
 import "fmt"
 
-func faktorial(n int) int {
-	hasil := 1
-	for i := 2; i <= n; i++ {
-		hasil = hasil * i
-	}
-	return hasil
-}
-func permutasi(n, r int) int {
-	return faktorial(n) / faktorial(n-r)
-}
-func kombinasi(n, r int) int {
-	return faktorial(n) / (faktorial(r) * faktorial(n-r))
-}
 func main() {
-	var a, b, c, d int
-	fmt.Scan(&a, &b, &c, &d)
-	fmt.Println(permutasi(a, c), kombinasi(a, c))
-	fmt.Println(permutasi(b, d), kombinasi(b, d))
+	var (
+		satu, dua, tiga string
+		temp            string
+	)
+
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&satu)
+
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&dua)
+
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&tiga)
+
+	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
+
+	temp = satu
+	satu = dua
+	dua = tiga
+	tiga = temp
+
+	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
 ```
 ### Output Unguided :
@@ -35,4 +41,4 @@ func main() {
 ##### Output 
 
 ![Screenshot Output Unguided 1_1](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/LAPRAKSMT-2/output/soal1.png)
-[ Program ini digunakan untuk menghitung prmutasi dan kombinasi dari 4 inputan user. disini ada 4 func yang pertama fktorial untuk menghitung faktorial menggunakan loop dimana loop akan berjalan dari 2 ke n dan mengalikan tiap i nya. Lalu func kedua untuk permutasi yang menghitung hasil bagi dari faktorial(n)/faktorial(n-r). Kemudian func ketiga untuk kombinasi bedanya dengan permutasi hanya pembaginya yang diubah menjadi faktorial(r)*faktorial(n-r). Yang terakhir ada func main disini hanya untuk membaca inputan user dan memunculkan output program.]
+[Saat program dijalankan, kita akan diminta untuk memasukkan tiga data bertipe string secara berurutan. Setiap input yang kita masukkan akan disimpan ke dalam variabel satu, dua, dan tiga sesuai dengan urutan inputnya. Setelah itu dilakukan proses pertukaran nilai, yaitu nilai pada variabel satu dipindahkan ke variabel temp. Kemudian nilai pada variabel dua menjadi nilai baru untuk variabel satu, nilai pada variabel tiga menjadi nilai baru untuk variabel dua, dan terakhir nilai yang ada di variabel temp dipindahkan ke variabel tiga. Setelah proses tersebut selesai, program akan menampilkan isi akhir dari variabel satu, dua, dan tiga.]

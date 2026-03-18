@@ -2,23 +2,19 @@ package main
 
 import "fmt"
 
-func f(x int) int {
-	return x * x
-}
-func g(x int) int {
-	return x - 2
-}
-func h(x int) int {
-	return x + 1
-}
 func main() {
-	var a, b, c int
-	fmt.Scan(&a, &b, &c)
-	hasil1 := f(g(h(a)))
-	hasil2 := g(h(f(b)))
-	hasil3 := h(f(g(c)))
-
-	fmt.Println(hasil1)
-	fmt.Println(hasil2)
-	fmt.Println(hasil3)
+	var a, b, c, d string
+	berhasil := true
+	for i := 1; i <= 5; i++ {
+		fmt.Print("percobaan ", i, ": ")
+		fmt.Scan(&a, &b, &c, &d)
+		if !(a == "merah" && b == "kuning" && c == "hijau" && d == "ungu") {
+			berhasil = false
+		}
+	}
+	if berhasil {
+		fmt.Print("BERHASIL : true")
+	} else {
+		fmt.Print("BERHASIL : false")
+	}
 }
