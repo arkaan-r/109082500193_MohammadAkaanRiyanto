@@ -3,7 +3,7 @@
 
 ## Unguided 
 
-### Siswa kelas IPA di salah satu sekolah menengah atas di Indonesia sedang mengadakanpraktikum kimia. Di setiap percobaan akan menggunakan 4 tabung reaksi, yang manasusunan warna cairan di setiap tabung akan menentukan hasil percobaan. Siswa dimintauntuk mencatat hasil percobaan tersebut. Percobaan dikatakan berhasil apabila susunanwarna zat cair pada gelas 1 hingga gelas 4 secara berturutan adalah ‘merah’, ‘kuning’,‘hijau’, dan ‘ungu’ selama 5 kali percobaan berulang.Buatlah sebuah program yang menerima input berupa warna dari ke 4 gelas reaksisebanyak 5 kali percobaan. Kemudian program akan menampilkan true apabila urutanwarna sesuai dengan informasi yang diberikan pada paragraf sebelumnya, dan falseuntuk urutan warna lainnya.Perhatikan contoh sesi interaksi program seperti di bawah ini (teks bergaris bawahadalah input/read):
+### Diberikan tiga buah fungsi matematika yaitu f (x) = x2, g (x) = x − 2 dan h (x) = x + Fungsi komposisi (fogoh)(x) artinya adalah f(g(h(x))). Tuliskan f(x), g(x) dan h(x)dalam bentuk function.Masukan terdiri dari sebuah bilangan bulat a, b dan c yang dipisahkan oleh spasi.Keluaran terdiri dari tiga baris. Baris pertama adalah (fogoh)(a), baris kedua (gohof)(b),dan baris ketiga adalah (hofog)(c)!
 #### 
 
 ```go
@@ -11,21 +11,25 @@ package main
 
 import "fmt"
 
+func f(x int) int {
+	return x * x
+}
+func g(x int) int {
+	return x - 2
+}
+func h(x int) int {
+	return x + 1
+}
 func main() {
-	var a, b, c, d string
-	berhasil := true
-	for i := 1; i <= 5; i++ {
-		fmt.Print("percobaan ", i, ": ")
-		fmt.Scan(&a, &b, &c, &d)
-		if !(a == "merah" && b == "kuning" && c == "hijau" && d == "ungu") {
-			berhasil = false
-		}
-	}
-	if berhasil {
-		fmt.Print("BERHASIL : true")
-	} else {
-		fmt.Print("BERHASIL : false")
-	}
+	var a, b, c int
+	fmt.Scan(&a, &b, &c)
+	hasil1 := f(g(h(a)))
+	hasil2 := g(h(f(b)))
+	hasil3 := h(f(g(c)))
+
+	fmt.Println(hasil1)
+	fmt.Println(hasil2)
+	fmt.Println(hasil3)
 }
 
 ```
@@ -34,4 +38,4 @@ func main() {
 ##### Output 
 
 ![Screenshot Output Unguided 1_1](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/LAPRAKSMT-2/output/soal2.png)
-[ Program ini dibuat untuk mengecek kombinasi 4 warna dalam percobaan. Jika warnanya merah, kuning, hijau, ungu maka true. Sebaliknya jika tidak sesuai maka false.]
+[ Program ini dibuat untuk menghitung fungsi.Didalamnya terdapat 4 func, pertama ada f(x)untuk menghitung f(x) = x^2, g(x)= x - 2, h(x) = x + 1, dan terakhir ada main disini tempat untuk membaca input a,b,c dan menghitung (FOGOh)(a), (GOHOF)(b), dan (HOFOG)(c)]
