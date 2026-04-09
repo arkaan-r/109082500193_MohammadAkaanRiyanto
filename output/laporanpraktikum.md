@@ -3,7 +3,7 @@
 
 ## Unguided 
 
-### 1.Telusuri program berikut dengan cara mengkompilasi dan mengeksekusi program. Silakanmasukan data yang sesuai sebanyak yang diminta program. Perhatikan keluaran yangdiperoleh. Coba terangkan apa sebenarnya yang dilakukan program tersebut?
+### Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematikadiskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, isenguntuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalianmembantu Jonas? (tidak tentunya ya :p)Masukan terdiri dari empat buah bilangan asli a, b, c, dan d yang dipisahkan oleh spasi,dengan syarat a ≥ c dan b ≥ d.Keluaran terdiri dari dua baris. Baris pertama adalah hasil permutasi dan kombinasi aterhadap c, sedangkan baris kedua adalah hasil permutasi dan kombinasi b terhadap d.Catatan: permutasi (P) dan kombinasi (C) dari n terhadap r (n ≥ r) dapat dihitung denganmenggunakan persamaan berikut!
 #### 
 
 ```go
@@ -11,29 +11,43 @@ package main
 
 import "fmt"
 
+fpackage main
+
+import "fmt"
+
+func faktorial(n int, hasil *int) {
+	*hasil = 1
+	for i := 1; i <= n; i++ {
+		*hasil *= i
+	}
+}
+
+func permutasi(n, r int, hasil *int) {
+	var nf, nrf int
+	faktorial(n, &nf)
+	faktorial(n-r, &nrf)
+	*hasil = nf / nrf
+}
+
+func kombinasi(n, r int, hasil *int) {
+	var nf, rf, nrf int
+	faktorial(n, &nf)
+	faktorial(r, &rf)
+	faktorial(n-r, &nrf)
+	*hasil = nf / (rf * nrf)
+}
+
 func main() {
-	var (
-		satu, dua, tiga string
-		temp            string
-	)
+	var a, b, c, d, p1, c1, p2, c2 int
+	fmt.Scan(&a, &b, &c, &d)
 
-	fmt.Print("Masukan input string: ")
-	fmt.Scanln(&satu)
+	permutasi(a, c, &p1)
+	kombinasi(a, c, &c1)
+	permutasi(b, d, &p2)
+	kombinasi(b, d, &c2)
 
-	fmt.Print("Masukan input string: ")
-	fmt.Scanln(&dua)
-
-	fmt.Print("Masukan input string: ")
-	fmt.Scanln(&tiga)
-
-	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
-
-	temp = satu
-	satu = dua
-	dua = tiga
-	tiga = temp
-
-	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
+	fmt.Println(p1, c1)
+	fmt.Println(p2, c2)
 }
 ```
 ### Output Unguided :
@@ -41,4 +55,4 @@ func main() {
 ##### Output 
 
 ![Screenshot Output Unguided 1_1](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/LAPRAKSMT-2/output/soal1.png)
-[Saat program dijalankan, kita akan diminta untuk memasukkan tiga data bertipe string secara berurutan. Setiap input yang kita masukkan akan disimpan ke dalam variabel satu, dua, dan tiga sesuai dengan urutan inputnya. Setelah itu dilakukan proses pertukaran nilai, yaitu nilai pada variabel satu dipindahkan ke variabel temp. Kemudian nilai pada variabel dua menjadi nilai baru untuk variabel satu, nilai pada variabel tiga menjadi nilai baru untuk variabel dua, dan terakhir nilai yang ada di variabel temp dipindahkan ke variabel tiga. Setelah proses tersebut selesai, program akan menampilkan isi akhir dari variabel satu, dua, dan tiga.]
+[Program ini digunakan untuk menghitung permutasi dan kombinasi dari dua pasang bilangan yang diinputkan pengguna. Fungsi faktorial digunakan untuk menghitung n! dengan perulangan, dan menggunakan pointer agar hasil langsung disimpan ke variabel tanpa rturn(karna pointer berguna untuk menyimpan nilai sementara jadi tidak perlu mengembalikan nilai ke func lain). Fungsi permutasi dan kombinasi mengambil nilai dari func faktorial karna menggunakan pointer. Di fungsi main, program membaca empt bilangan, menghitung hasil untuk dua pasangan(permutasi dan kombinasi), lalu menampilkannya dalam dua baris.]
