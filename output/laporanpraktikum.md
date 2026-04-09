@@ -3,7 +3,7 @@
 
 ## Unguided 
 
-### Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematikadiskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, isenguntuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalianmembantu Jonas? (tidak tentunya ya :p)Masukan terdiri dari empat buah bilangan asli a, b, c, dan d yang dipisahkan oleh spasi,dengan syarat a ≥ c dan b ≥ d.Keluaran terdiri dari dua baris. Baris pertama adalah hasil permutasi dan kombinasi aterhadap c, sedangkan baris kedua adalah hasil permutasi dan kombinasi b terhadap d.Catatan: permutasi (P) dan kombinasi (C) dari n terhadap r (n ≥ r) dapat dihitung denganmenggunakan persamaan berikut!
+### Deret fibonacci adalah sebuah deret dengan nilai suku ke-0 dan ke-1 adalah 0 dan 1, dan nilai suku ke-n selanjutnya adalah hasil penjumlahan dua suku sebelumnya. Secara umum dapat diformulasikan Sn = Sn−1 + Sn−2 . Berikut ini adalah contoh nilai deret fibonacci hingga suku ke-10. Buatlah program yang mengimplementasikan fungsi rekursif pada deret fibonacci tersebut.
 #### 
 
 ```go
@@ -11,48 +11,34 @@ package main
 
 import "fmt"
 
-fpackage main
-
-import "fmt"
-
-func faktorial(n int, hasil *int) {
-	*hasil = 1
-	for i := 1; i <= n; i++ {
-		*hasil *= i
+func fibonacci(n int) int {
+	if n <= 1 {
+		return n
 	}
-}
-
-func permutasi(n, r int, hasil *int) {
-	var nf, nrf int
-	faktorial(n, &nf)
-	faktorial(n-r, &nrf)
-	*hasil = nf / nrf
-}
-
-func kombinasi(n, r int, hasil *int) {
-	var nf, rf, nrf int
-	faktorial(n, &nf)
-	faktorial(r, &rf)
-	faktorial(n-r, &nrf)
-	*hasil = nf / (rf * nrf)
+	return fibonacci(n-1) + fibonacci(n-2)
 }
 
 func main() {
-	var a, b, c, d, p1, c1, p2, c2 int
-	fmt.Scan(&a, &b, &c, &d)
+	var n int
+	fmt.Scan(&n)
 
-	permutasi(a, c, &p1)
-	kombinasi(a, c, &c1)
-	permutasi(b, d, &p2)
-	kombinasi(b, d, &c2)
+	fmt.Print("n: ")
+	for i := 0; i <= n; i++ {
+		fmt.Print(i, " ")
+	}
+	fmt.Println()
 
-	fmt.Println(p1, c1)
-	fmt.Println(p2, c2)
+	fmt.Print("Sn: ")
+	for i := 0; i <= n; i++ {
+		fmt.Print(fibonacci(i), " ")
+	}
+
 }
+
 ```
 ### Output Unguided :
 
 ##### Output 
 
 ![Screenshot Output Unguided 1_1](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/LAPRAKSMT-2/output/soal1.png)
-[Program ini digunakan untuk menghitung permutasi dan kombinasi dari dua pasang bilangan yang diinputkan pengguna. Fungsi faktorial digunakan untuk menghitung n! dengan perulangan, dan menggunakan pointer agar hasil langsung disimpan ke variabel tanpa rturn(karna pointer berguna untuk menyimpan nilai sementara jadi tidak perlu mengembalikan nilai ke func lain). Fungsi permutasi dan kombinasi mengambil nilai dari func faktorial karna menggunakan pointer. Di fungsi main, program membaca empt bilangan, menghitung hasil untuk dua pasangan(permutasi dan kombinasi), lalu menampilkannya dalam dua baris.]
+[Program ini bertujuan untuk menampilkan deret indeks dari 0 hingga n serta deret bilangan Fibonacci hingga suku ke-n dengan menggunakan bahasa pemrograman Go. Nilai n diinput oleh pengguna, kemudian program mencetak indeks menggunakan perulangan. Untuk menghitung bilangan Fibonacci, digunakan fungsi rekursif, di mana jika n ≤ 1 maka nilai dikembalikan langsung, sedangkan jika n > 1 maka dihitung sebagai penjumlahan dua suku sebelumnya, yaitu Fibonacci(n-1) + Fibonacci(n-2)]
