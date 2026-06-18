@@ -56,7 +56,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul14/output/output-soal1.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul14/output/output-soal1.png)
 [Penjelasan]Program ini digunakan untuk mengurutkan nomor rumah kerabat Hercules pada setiap daerah menggunakan algoritma Selection Sort. Program diawali dengan membaca jumlah daerah yang akan diproses, kemudian untuk setiap daerah dibaca banyaknya rumah beserta nomor rumah para kerabat. Seluruh nomor rumah disimpan ke dalam array dan diurutkan secara menaik. Algoritma Selection Sort bekerja dengan mencari elemen terkecil dari bagian array yang belum terurut, kemudian menukarnya dengan elemen pada posisi saat ini. Proses tersebut dilakukan berulang hingga seluruh data tersusun dari nilai terkecil ke terbesar. Setelah proses pengurutan selesai, program menampilkan nomor rumah yang telah terurut untuk setiap daerah.
 //
 
@@ -137,7 +137,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul14/output/output-soal2.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul14/output/output-soal2.png)
 [Penjelasan] Program ini dibuat untuk membantu Hercules mengunjungi kerabatnya dengan jumlah penyeberangan jalan yang seminimal mungkin. Program menerima sejumlah nomor rumah pada setiap daerah, kemudian memisahkan nomor rumah ganjil dan genap ke dalam kelompok yang berbeda. Nomor rumah ganjil diurutkan secara menaik menggunakan algoritma Insertion Sort, sedangkan nomor rumah genap diurutkan secara menurun. Setelah proses pengurutan selesai, program mencetak seluruh nomor rumah ganjil terlebih dahulu, kemudian diikuti nomor rumah genap. Dengan susunan tersebut, Hercules dapat mengunjungi seluruh rumah pada satu sisi jalan terlebih dahulu sebelum berpindah ke sisi jalan yang lain.
 //
 
@@ -202,7 +202,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul14/output/output-soal3.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul14/output/output-soal3.png)
 [Penjelasan]Program ini digunakan untuk menghitung nilai median dari sekumpulan data bilangan bulat. Data dibaca satu per satu dan disimpan ke dalam array. Setiap kali program menemukan angka 0, seluruh data yang telah tersimpan akan diurutkan menggunakan algoritma Insertion Sort, kemudian median dari data tersebut dihitung dan ditampilkan. Jika jumlah data ganjil, median adalah elemen yang berada tepat di tengah setelah data diurutkan. Jika jumlah data genap, median diperoleh dari rata-rata dua nilai tengah dan hasilnya dibulatkan ke bawah sesuai ketentuan soal. Proses ini dapat terjadi beberapa kali selama pembacaan data. Program akan berhenti ketika menemukan bilangan penanda akhir yaitu -5313. Dengan demikian, setiap kemunculan angka 0 berfungsi sebagai perintah untuk menampilkan median dari seluruh data yang telah dibaca hingga saat itu.
 //
 
@@ -280,7 +280,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul14/output/output-soal4.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul14/output/output-soal4.png)
 [Penjelasan]Program ini digunakan untuk membaca sekumpulan bilangan bulat non-negatif yang diakhiri oleh bilangan negatif. Seluruh bilangan non-negatif yang dimasukkan pengguna disimpan ke dalam array, kemudian diurutkan menggunakan algoritma Insertion Sort. Algoritma ini bekerja dengan mengambil satu elemen dan menyisipkannya ke posisi yang sesuai pada bagian array yang telah terurut sebelumnya. Setelah seluruh data terurut, program memeriksa apakah selisih antara setiap elemen dengan elemen sebelumnya selalu sama. Jika seluruh selisih bernilai sama, maka program menampilkan status bahwa data memiliki jarak tetap beserta nilai jaraknya. Sebaliknya, jika terdapat selisih yang berbeda, maka program menampilkan informasi bahwa data memiliki jarak yang tidak tetap.
 //
 
@@ -375,6 +375,6 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul14/output/output-soal5.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul14/output/output-soal5.png)
 [Penjelasan]Program ini digunakan untuk mengelola data buku pada sebuah perpustakaan. Setiap buku memiliki beberapa atribut seperti id, judul, penulis, penerbit, jumlah eksemplar, tahun terbit, dan rating. Data buku yang dimasukkan pengguna disimpan ke dalam array bertipe struct. Selanjutnya data buku diurutkan berdasarkan nilai rating secara menurun menggunakan algoritma Insertion Sort sehingga buku dengan rating tertinggi berada pada posisi pertama. Setelah proses pengurutan selesai, program menampilkan buku terfavorit, yaitu buku yang memiliki rating tertinggi, kemudian menampilkan lima buku dengan rating tertinggi. Selain itu, program juga dapat melakukan pencarian buku berdasarkan rating yang dimasukkan pengguna. Jika ditemukan buku dengan rating yang dicari, seluruh informasi buku akan ditampilkan, sedangkan jika tidak ditemukan maka program akan menampilkan pesan bahwa buku dengan rating tersebut tidak tersedia.
 //

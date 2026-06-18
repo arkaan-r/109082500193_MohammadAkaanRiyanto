@@ -61,7 +61,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul9/output/output-soal1.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul9/output/output-soal1.png)
 [Penjelasan]Program ini dipakai untuk mengecek apakah suatu titik masuk ke lingkaran pertama, lingkaran kedua, keduanya, atau malah di luar. Caranya dengan menghitung jarak titik ke pusat lingkaran, lalu dibandingkan dengan nilai radius. Kalau jaraknya lebih kecil atau sama dengan radius, berarti titik tersebut ada di dalam lingkaran.
 
 //
@@ -172,7 +172,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul9/output/output-soal2.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul9/output/output-soal2.png)
 [Penjelasan] Program ini digunakan untuk menyimpan beberapa angka ke dalam array lalu menampilkan isi array sesuai kebutuhan. Data bisa ditampilkan semua, berdasarkan indeks ganjil, indeks genap, atau indeks kelipatan tertentu. Selain itu program ini juga bisa menghapus data, mencari rata", dan menghitung berapa kali suatu angka muncul di dalam array.
 //
 
@@ -235,7 +235,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul9/output/output-soal3.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul9/output/output-soal3.png)
 [Penjelasan]Program ini dipakai untuk mencatat hasil pertandingan dua klub. Setiap skor yang dimasukkan akan dibandingkan untuk menentukan klub mana yang menang. Nama klub yang menang disimpan ke dalam array, lalu di akhir program semua hasil pertandingan ditampilkan satu per satu.
 //
 
@@ -315,5 +315,5 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul9/output/output-soal4.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul9/output/output-soal4.png)
 [Penjelasan]Program ini digunakan untuk membalik urutan huruf yang disimpan di dalam array. Setelah dibalik, program mengecek apakah kata tersebut termasuk palindrom atau tidak. Jika huruf dari depan dan belakang sama, maka kata tersebut termasuk palindrom.

@@ -32,7 +32,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul5/output/output-soal1.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul5/output/output-soal1.png)
 [Penjelasan]Program ini buat nampilin deret Fibonacci sampai angka ke-n. Fungsi fibonacci pakai cara rekursif, jadi dia manggil dirinya sendiri. Kalau n = 0 hasilnya 0, kalau n = 1 hasilnya 1, selain itu dihitung dari penjumlahan dua angka sebelumnya (n-1 dan n-2). Di main, user masukin nilai n, lalu program ngeloop dari 0 sampai n dan tiap angka dihitung pakai fungsi tadi, terus langsung ditampilin. Jadi outputnya deret Fibonacci dari awal sampai ke-n.
 
 //
@@ -67,7 +67,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul5/output/output-soal2.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul5/output/output-soal2.png)
 [Penjelasan] Program ini buat nampilin pola bintang segitiga ke bawah yaitu naik dari 1 sampai n. Fungsi bintang pakai rekursif. Jadi kalau i udah lebih dari n, fungsi berhenti. Kalau belum, dia cetak bintang sebanyak i, lalu pindah baris, terus manggil dirinya lagi dengan i+1. Di main, user masukin nilai n, lalu fungsi dipanggil mulai dari i = 1. Jadi hasilnya bakal kayak: 1 bintang, 2 bintang, sampai n bintang.
 //
 
@@ -102,5 +102,5 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul5/output/output-soal3.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul5/output/output-soal3.png)
 [Penjelasan]Program ini buat nampilin semua faktor dari suatu bilangan. Fungsi faktor jalan dari i = 1 sampai n. Kalau i lebih dari n, fungsi berhenti. Setiap langkah dicek, kalau n % i == 0 berarti i adalah faktor dari n, jadi langsung dicetak. Setelah itu fungsi manggil dirinya lagi dengan i+1 buat lanjut ngecek angka berikutnya. Di main, user masukin angka n, lalu program nampilin semua faktor dari angka tersebut mulai dari 1 sampai n.

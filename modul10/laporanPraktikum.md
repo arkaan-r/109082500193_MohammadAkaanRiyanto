@@ -43,7 +43,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul10/output/output-soal1.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul10/output/output-soal1.png)
 [Penjelasan]Program ini berfungsi untuk mengumpulkan input berat badan sejumlah kelinci lalu menyimpannya ke dalam sebuah array. Setelah datanya terkumpul maka program akan membandingkan setiap nilai secara otomatis untuk menentukan dan menampilkan mana berat yang paling besar dan mana yang paling kecil.
 
 //
@@ -90,7 +90,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul10/output/output-soal2.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul10/output/output-soal2.png)
 [Penjelasan] Program ini berfungsi untuk membagi data berat ikan ke dalam beberapa wadah berdasarkan jumlah yang kamu tentukan. Setelah menginput berat tiap ikan, kode tersebut akan menghitung rata-rata berat ikan di setiap wadah secara otomatis.
 //
 
@@ -152,7 +152,7 @@ func main() {
 ### Output Unguided :	
 
 ##### Output 
-![Screenshot Output Unguided 1_](https://github.com/MuhammadJovan/109082500024_Muhammad-Jovan/blob/main/modul10/output/output-soal3.png)
+![Screenshot Output Unguided 1_](https://github.com/arkaan-r/109082500193_MohammadAkaanRiyanto/blob/main/modul10/output/output-soal3.png)
 [Penjelasan]Program tersebut digunakan untuk ngolah data berat badan balita dengan mencari nilai ekstrem sekaligus menghitung rata-ratanya. Program akan meminta input berat badan satu per satu, lalu secara otomatis nentuin berat yang paling ringan dan yang paling berat lalu menampilkan hasil perhitungan rata" seluruh data itu.
 //
 
